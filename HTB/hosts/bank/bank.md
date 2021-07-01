@@ -93,7 +93,7 @@ Navigating to the directory in a browser reveals a list of bank accounts, includ
 
 ![ACC File Content](images/accfilecontent.png)
 
-The contents of these files appear to be encrypted, and I wasn't sure with what encryption method. I did some searching for .acc file types, and found [a link](https://www.reviversoft.com/file-extensions/acc) to a web site that information about the program that generated these files. The article states that the .acc files were generated from a program called FKJ Software Graphic Accounts. Researching for information about the encryption method that this application uses, I found [an online manual](http://209.68.58.203/manual/files%20and%20security.html) for the software that revealed the following information about the encryption the software uses:
+The contents of these files appear to be encrypted, and I wasn't sure with what encryption method. I did some searching for .acc file types, and found [a link](https://www.reviversoft.com/file-extensions/acc) to a web site that had information about the program that generated these files. The article states that the .acc files were generated from a program called FKJ Software Graphic Accounts. Researching for information about the encryption method that this application uses, I found [an online manual](http://209.68.58.203/manual/files%20and%20security.html) for the software that revealed the following information about the encryption the software uses:
 
 ![Manual](images/manual.png)
 
