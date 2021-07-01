@@ -86,7 +86,7 @@ An interesting directory called balance-transfer is found:
 
 ![balance-transfer](images/balance-transfer.png)
 
-##### balance-transfer Directory
+### balance-transfer Directory
 Navigating to the directory in a browser reveals a list of bank accounts, including their username and password, in ACC (Graphic Accounts Data File) format:
 
 ![ACC Files](images/accfiles.png)
