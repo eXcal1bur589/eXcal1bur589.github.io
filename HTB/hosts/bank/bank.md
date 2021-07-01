@@ -169,7 +169,9 @@ Inside the /var/htb folder, there is a SUID script called emergency. Looking at 
 
 ![[Pasted image 20210701153203.png]]
 
-When you answer y, the script calls a binary located in the /var/htb/bin folder called emergency. Whatever the underlying code of this program is doing, it gives a root shell which is good for us and bad for our target.
+When you answer y, the script calls a binary located in the /var/htb/bin folder called emergency. Whatever the underlying code of this program is doing, it gives a root shell which is good for us and bad for our target. We can now access the root flag!:
+
+![[Pasted image 20210701155111.png]]
 
 ##### Root Method 2
 Linpeas also discovered that the /etc/passwd file is writable. Modern Linux systems use the /etc/shadow file for storing passwords, but if you have a user with a hashed password in the /etc/passwd file, then that password will be honored first instead of one in the /etc/shadow file. Since I can write to the /etc/passwd file, I will just make myself a backdoor account with root permissions to access the target:
