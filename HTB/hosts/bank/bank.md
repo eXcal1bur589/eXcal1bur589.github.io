@@ -1,7 +1,7 @@
 # Bank
 Bank is a retired Hack The Box server with a Hack The Box difficulty rating of easy. Community ratings put it at a medium difficulty. The description of the box mentions SUID and web as possible methods of exploitation.
 
-##### Enumeration
+### Enumeration
 The IP address listed for this host is 10.10.10.29. To start off, I will run a full TCP/UDP port scan on the target with nmap. The command for the TCP port scan is:
 
 ```
