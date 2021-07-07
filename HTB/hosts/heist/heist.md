@@ -31,7 +31,7 @@ nmap -script=smb-vuln\* -p445 10.10.10.149
 
 It doesn't appear that there are any glaring SMB vulnerabilities on this host:
 
-![SMB Scan](smbscan.png)
+![SMB Scan](images/smbscan.png)
 
 Running enum4linux and trying to connect with a null session does not work either. For now, I will move on to other ports.
 
