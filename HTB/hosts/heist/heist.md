@@ -74,6 +74,7 @@ I then used a tool from Impacket called [lookupsid](https://github.com/SecureAut
 
 ### crackmapexec SMB/WinRM
 I now have several more user accounts I can try to use for SMB and WinRM access. I tried all accounts with the 3 passwords discovered for SMB access, and none other than hazard worked (which I already knew). I then tried all accounts/passwords with WinRM, and got a hit back on the user Chase with the password `Q4)sJu\Y8qz*A3?d`:
+
 ![crackmapexecwinrm](images/crackmapexecwinrm.png)
 
 ### evil-winrm/User Flag
