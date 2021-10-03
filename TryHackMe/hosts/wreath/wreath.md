@@ -144,7 +144,7 @@ Navigating to the that URL reveals that this is the git server!
 
 ## Git Server Exploitation
 
-When trying to access anything on the page, I'm asked to authenticate. I don't have any credentials to use, so I'll start looking for known exploits to try Googling for GitStack exploits shows that there is an unauthenticated RCE exploit available: https://github.com/kacperszurek/exploits/blob/master/GitStack/gitstack_unauthenticated_rce.py
+When trying to access anything on the page, I'm asked to authenticate. I don't have any credentials to use, so I'll start looking for known exploits to try. Googling for GitStack exploits shows that there is an unauthenticated RCE exploit available: https://github.com/kacperszurek/exploits/blob/master/GitStack/gitstack_unauthenticated_rce.py
 
 I just need to modify the exploit to use the IP address of the web server, and fire it off:
 
