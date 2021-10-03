@@ -86,7 +86,7 @@ Hm... now the exploit no longer seems to be working! But since I have RCE as roo
 
 ![Finding .ssh Folder in /root](images/webmin-ssh-folder.png)
 
-And digging further in to the .ssh directory, we can see that we have a id_rsa key file present:
+And digging further in to the .ssh directory, I can see that we have a id_rsa key file present:
 
 ![id_rsa Key File](images/webmin-id-rsa.png)
 
@@ -207,7 +207,7 @@ You could copy and paste the whole contents of this in to a .sh script on the ta
 
 ## Agents
 
-The stager was able to connect back to the listener, and create an agent. An agent is simply a compromised machine that we can now use PowerShell Empire to manage:
+The stager was able to connect back to the listener, and create an agent. An agent is simply a compromised machine that you can now use PowerShell Empire to manage:
 
 ![Web Server Agent](images/empire-webserver-agent.png)
 
