@@ -39,7 +39,7 @@ The first host I'm going after is the web server, which is at 10.200.196.200. Na
 
 ![Web Site](images/thomas-wreath-website.png)
 
-I'll go ahead and run a full nmap scan against the web server to see if we can find out some more information about the host:
+I'll go ahead and run a full nmap scan against the web server to see if I can find out some more information about the host:
 
 ```
 sudo nmap -sS -A 10.200.196.200
