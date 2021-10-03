@@ -45,7 +45,7 @@ I'll go ahead and run a full nmap scan against the web server to see if I can fi
 sudo nmap -sS -A 10.200.196.200
 ```
 
-The nmap scan reveals that ssh, 80, 443, 9090, and 10000 are listening on this host:
+The nmap scan reveals that 22, 80, 443, 9090, and 10000 are listening on this host:
 
 ![Web Server Port Scan](images/webserver-port-scan.png)
 
