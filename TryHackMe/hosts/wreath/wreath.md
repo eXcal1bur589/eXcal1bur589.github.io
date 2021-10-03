@@ -154,7 +154,7 @@ As this script needs to be ran against the git server, which is only accessible 
 
 ![RCE as nt authority\system on Git Server](images/git-server-system-rce.png)
 
-Now that I have RCE on the git server as nt authority\system, we want to get access to the target. For this, I utilized the exploit to make myself a local account on the server, and then add that account to both the local Administrators group as well as the Remote Desktop Users group. I just ran the script 3 times, each time uncommenting and commenting out the respective commands to be ran:
+Now that I have RCE on the git server as nt authority\system, I want to get elevate privileges. For this, I utilized the exploit to make myself a local account on the server, and then add that account to both the local Administrators group as well as the Remote Desktop Users group. I just ran the script 3 times, each time uncommenting and commenting out the respective commands to be ran:
 
 ![Creating Local Account](images/git-server-rce-rdp.png)
 
