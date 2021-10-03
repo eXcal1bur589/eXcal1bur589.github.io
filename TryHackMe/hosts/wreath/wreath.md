@@ -33,7 +33,7 @@ So it looks like there are a total of 3 hosts on the network that we need to get
 
 # Web Server (10.200.196.200)
 
-The first host we're going after is the web server, which is at 10.200.196.200. Navigating to the URL, we're given a Server Not Found page but notice in the address bar that the URL has changed to https://thomaswreath.thm/. Thomas has likely forgotten to set up a virtual host in the web server configuration for the IP address to resolve properly. In order to access the web site, I had to add an entry to my hosts file with the IP of the web server mapping to thomaswreath.thm. After adding the entry, the web site now loads properly:
+The first host I'm going after is the web server, which is at 10.200.196.200. Navigating to the URL, I'm given a Server Not Found page but notice in the address bar that the URL has changed to https://thomaswreath.thm/. Thomas has likely forgotten to set up a virtual host in the web server configuration for the IP address to resolve properly. In order to access the web site, I had to add an entry to my hosts file with the IP of the web server mapping to thomaswreath.thm. After adding the entry, the web site now loads properly:
 
 ![Hosts File Entry](images/hosts-file-entry.png)
 
