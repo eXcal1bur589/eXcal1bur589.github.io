@@ -66,4 +66,4 @@ I now have a reverse shell connection to the vulnerable web server, and in this 
 
 # Conclusion
 
-Hopefully this post has demonstrated how severe of a vulnerability log4j is. If you have a system that is running log4j and it has not been patched, you should immediately patch it and look for indicators of compromise. This vulnerability will likely persist for years to come, so it is critical to understand how it works, both for red teams as well as blue teams. Thank you for stopping by and checking out this post, I hope you learned something from it and enjoyed reading my thoughts.
+Hopefully this post has demonstrated how severe of a vulnerability this is. If you have a system that is running log4j and it has not been patched, you should immediately patch it and look for indicators of compromise. This vulnerability will likely persist for years to come, so it is critical to understand how it works, both for red teams as well as blue teams. Thank you for stopping by and checking out this post, I hope you learned something from it and enjoyed reading my thoughts.
