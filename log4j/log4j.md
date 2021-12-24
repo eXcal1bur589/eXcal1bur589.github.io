@@ -26,7 +26,7 @@ So now that we (hopefully) have a little bit of a better understanding of how th
 
 ![](images/vulnerable-app.png)
 
-There are many possibilities for exploiting a vulnerable application. Some of the more common exploits being seen are installing cryptominers, dumping environment variable secrets, and more. The PoC exploit script is set up to host a malicious Java class which will start a reverse shell on port 9001. Once the attack succeeds, we should have a reverse shell on the vulnerable application. I'll start up a netcat listener on port 9001 to catch the shell that the exploit is going to create:
+There are many possibilities for exploiting a vulnerable application. Some of the more common exploits being seen are installing cryptominers, dumping environment variable secrets, and more. The PoC exploit script is set up to host a malicious Java class which will start a reverse shell on port 9001. Once the attack succeeds, we should have a reverse shell on the underlying vulnerable web server. I'll start up a netcat listener on port 9001 to catch the shell that the exploit is going to create:
 
 ![](images/start-nc-9001.png)
 
