@@ -48,7 +48,7 @@ The console output of the vulnerable application shows this request being logged
 
 ![](images/log4j-logged.png)
 
-Depending on the application, some inputs may or may not be vulnerable to the exploit. Some of the common injection points that have been discovered so far are anything that may get logged in an HTTP request, such as User-Agent header. Input fields such as login forms are also likely to be logged as well, making them prime candidates for injection. So now that we have found a vulnerable injection point, I'll pass in the generated JNDI request, which will execute on the vulnerable application and create the reverse shell connection back to my attacker machine. I'll use burpsuite repeater so that the full request can be seen and understood:
+Depending on the application, some inputs may or may not be vulnerable to the exploit. Some of the common injection points that have been discovered so far are anything that may get logged in an HTTP request, such as the User-Agent header. Input fields such as login forms are also likely to be logged as well, making them prime candidates for injection. So now that we have found a vulnerable injection point, I'll pass in the generated JNDI request, which will execute on the vulnerable application and create the reverse shell connection back to my attacker machine. I'll use burpsuite repeater so that the full request can be seen and understood:
 
 ![](images/burpsuite-request.png)
 
