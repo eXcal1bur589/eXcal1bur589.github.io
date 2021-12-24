@@ -39,6 +39,7 @@ The exploit script outputs the malicious JNDI string that you need to feed your 
 ![](images/malicious-jndi-string.png)
 
 So now that we have all the pieces in place, it's time to exploit the vulnerable application. In this example, the vulnerable fields in this application is the username and password field. This application logs logins to the application: 
+
 ![](images/test-test.png)
 
 ![](images/we-will-log-your-information.png)
