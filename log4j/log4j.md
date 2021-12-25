@@ -26,11 +26,11 @@ So now that we (hopefully) have a little bit of a better understanding of how th
 
 ![](images/vulnerable-app.png)
 
-There are many possibilities for exploiting a vulnerable application. Some of the more common exploits being seen are installing cryptominers, dumping environment variable secrets, and more. The PoC exploit script is set up to host a malicious Java class which will start a reverse shell on port 9001. Once the attack succeeds, we should have a reverse shell on the underlying vulnerable web server. I'll start up a netcat listener on port 9001 to catch the shell that the exploit is going to create:
+There are many things that an attacker can do with a vulnerable application. Some of the more common things being seen are installing cryptominers, dumping environment variable secrets, and more. The PoC exploit script is set up to host a malicious Java class which will start a reverse shell on port 9001. Once the attack succeeds, we should have a reverse shell on the underlying vulnerable web server. I'll start up a netcat listener on port 9001 to catch the shell that the exploit is going to create:
 
 ![](images/start-nc-9001.png)
 
-Next, I'll start the exploit script. There are 2 components to pulling this exploit off. 1st, you need an LDAP server that you will specify in your JNDI string to the vulnerable application. 2nd, you will need a web server to host your malicious payload that the LDAP request will obtain and execute. The PoC script starts both servers on your localhost to simplify the needed configuration to begin exploiting vulnerable hosts. I will tell the script to start the web server on my localhost on port 8000, and set the lport value for the shell connection to 9001:
+Next, I'll start the exploit script. There are 2 components to pulling this exploit off. 1st, you need an LDAP server that you will specify in your JNDI string to the vulnerable application. 2nd, you will need a web server to host your malicious payload that the LDAP request will obtain and execute. The PoC script starts both servers on your localhost to simplify the needed configuration to begin exploiting vulnerable applications. I will tell the script to start the web server on my localhost on port 8000, and set the lport value for the shell connection to 9001:
 
 ![](images/poc-start.png)
 
