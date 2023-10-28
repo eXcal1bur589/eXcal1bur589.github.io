@@ -11,3 +11,14 @@ Files that execute code, such as .exe and .dll files, have a standard format kno
 The Imports tab shows the IAT of the PE file. The IAT shows what external dlls the executable is using and the functions within those dlls to operate. The below screenshot shows what dlls and associated functions calc.exe requires to operate:
 
 ![image](https://github.com/eXcal1bur589/excal1bur589.github.io/assets/79113755/adfc5e3a-492c-4f15-8e1b-acaffd250fd8)
+
+AV and EDR solutions have the ability to view the IAT of an executable to determine if there are any malicious functions being used. The presence of well known malicious functions will put AV/EDR on alert and the context in which they are used will be heavily scrutinized. Some common functions that may show up in a malicious file's IAT are:
+
+    - CreateRemoteThread: Often used for code injection.
+    - VirtualAllocEx: Used to allocate memory in another process.
+    - WriteProcessMemory: Writes to another process's memory, often used with VirtualAllocEx.
+    - OpenProcess: Opens another process for various purposes, including injection or modification.
+    - SetWindowsHookEx: Used to set up system-wide hooks, sometimes for keylogging.
+    - GetAsyncKeyState: Often used in keylogging to check the state of a key.
+    - RegSetValueEx: Modifies the Windows registry.
+    - ShellExecute: Executes programs or opens documents.
