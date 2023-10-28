@@ -22,3 +22,5 @@ AV and EDR solutions have the ability to view the IAT of an executable to determ
     - GetAsyncKeyState: Often used in keylogging to check the state of a key.
     - RegSetValueEx: Modifies the Windows registry.
     - ShellExecute: Executes programs or opens documents.
+
+These functions are imported from various dlls such as kernel32.dll, etc., which in the context of a legitimate application, are not malicious. Malware can take advantage of the functions as well to perform malicious actions against the victim operating system.
