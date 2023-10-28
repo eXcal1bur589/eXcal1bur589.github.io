@@ -23,4 +23,13 @@ AV and EDR solutions have the ability to view the IAT of an executable to determ
     - RegSetValueEx: Modifies the Windows registry.
     - ShellExecute: Executes programs or opens documents.
 
-These functions are imported from various dlls such as kernel32.dll, etc., which in the context of a legitimate application, are not malicious. Malware can take advantage of the functions as well to perform malicious actions against the victim operating system.
+These functions are imported from various dlls such as kernel32.dll, etc., which in the context of a legitimate application, are not malicious. Malware can take advantage of the functions as well to perform malicious actions against the victim operating system. Let's take a look at one of the code samples from the Malware Academy course. The code is from Process Injection - Shellcode Injection module, which goes over injecting malicious shellcode in to a remote process. The code utilizes several well signatured functions that surely will get detected by AV/EDR:
+
+    - VirtualAllocEx
+
+    - WriteProcessMemory
+
+    - VirtualProtectEx
+
+    - CreateRemoteThread
+
