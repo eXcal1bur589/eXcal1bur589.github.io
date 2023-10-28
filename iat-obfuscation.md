@@ -33,3 +33,6 @@ These functions are imported from various dlls such as kernel32.dll, etc., which
 
     - CreateRemoteThread
 
+Once the source code is compiled, the malicious functions are now visible in the IAT:
+
+![image](https://github.com/eXcal1bur589/excal1bur589.github.io/assets/79113755/4e4d8251-ae2a-4b7a-b09b-c315a5be28e4)
