@@ -23,7 +23,7 @@ AV and EDR solutions have the ability to view the IAT of an executable to determ
     - RegSetValueEx: Modifies the Windows registry.
     - ShellExecute: Executes programs or opens documents.
 
-These functions are imported from various dlls such as kernel32.dll, etc., which in the context of a legitimate application, are not malicious. Malware can take advantage of the functions as well to perform malicious actions against the victim operating system. Let's take a look at one of the code samples from the Malware Academy course. The code is from Process Injection - Shellcode Injection module, which goes over injecting malicious shellcode in to a remote process. The code, at a high level, takes the shellcode for a reverse shell payload generated from msfevnom and then injects it in the memory of a remote process specified by the developer. The course includes an encryption utility that is sufficient enough to bypass Windows Defender, but relies on that alone. The code utilizes several well signatured functions that malware commonly use, such as:
+These functions are imported from various dlls such as kernel32.dll, etc., which in the context of a legitimate application, are not malicious. Malware can take advantage of the functions as well to perform malicious actions against the victim operating system. Let's take a look at one of the code samples from the Malware Academy course. The code is from Process Injection - Shellcode Injection module, which goes over injecting malicious shellcode in to a remote process. The code, at a high level, takes the shellcode for a reverse shell payload generated from msfevnom and then injects it in the memory of a remote process specified by the developer. The course includes an encryption utility that is sufficient enough to bypass Windows Defender, but relies on that alone. The code utilizes several well signatured functions that malware commonly uses, such as:
 
     - VirtualAllocEx
 
@@ -36,3 +36,6 @@ These functions are imported from various dlls such as kernel32.dll, etc., which
 Once the source code is compiled, the malicious functions are now visible in the IAT:
 
 ![image](https://github.com/eXcal1bur589/excal1bur589.github.io/assets/79113755/4e4d8251-ae2a-4b7a-b09b-c315a5be28e4)
+
+## Obfuscating the IAT
+
